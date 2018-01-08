@@ -1,0 +1,206 @@
+hr {
+  margin: 10px auto 40px;
+  width: 45px;
+  border: 1px solid rgb(32, 32, 32);
+}
+
+section { 
+  padding: 10px 5%;
+}
+
+section > h2 {
+  font-family: $base-font-family;
+  font-size: em(20);
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+}
+
+///////////////////////////////////
+// #about
+//
+#about strong {
+  text-transform: uppercase;
+}
+
+#about > h3 {
+  font-size: em(18);
+}
+
+#about > ol {
+  text-align: left;
+}
+
+#reliable {
+  background: #000;
+  text-align: center;
+  & > h2 {
+    font-family: 'Hoefler Text', $serif;
+    font-size: em(66);
+    font-style: italic;
+    color: #fff;
+  }
+  & > h2 > span {
+    color: #7AFF63;
+  }
+}
+
+///////////////////////////////////
+// #specialist
+//
+#specialist {
+  @include clearfix;
+  text-align: center;
+}
+
+#specialist > hr {
+  margin-bottom: 40px;
+}
+
+.specialist-div > h3 {
+  font-family: 'Hoefler Text', $serif;
+  font-size: em(80);
+  font-weight: normal;
+  font-style: italic;
+}
+
+#ad2 {
+  position: relative;
+  background: url(../images/ad2.jpg) no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 650px; 
+
+  & > .ad2-content {
+    position: relative;
+    top: 35%;
+    margin: 10%;
+    text-align: center;
+    color: #fff;
+  }
+
+  & h2 {
+    font-family: $header-font-family;
+    font-size: em(24);
+    font-weight: bold;
+    font-style: normal;
+  }
+  & p {
+    font-style: italic;
+  }
+}
+
+///////////////////////////////////
+// #services
+//
+#services {
+  text-align: center;
+}
+
+#services > h3 {
+  font-size: em(26);
+  margin-bottom: 0.8em;
+}
+
+#services h4 {
+  text-align: center;
+  font-size: em(18);
+}
+
+#services > ol {
+  text-align: left;
+}
+
+///////////////////////////////////
+// #contact
+//
+#contact {
+ background: rgb(234,234,234); 
+}
+
+form > h2 {
+  margin-bottom: 0;
+  font-size: em(60);
+}
+
+@media only screen and (max-width: 568px) {
+  #ad2 {
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (min-width: $medium-screen) {
+  #about {  
+    padding: 40px 5%;
+    text-align: center;
+  }
+  #about > p {
+    font-size: em(18);
+    margin-bottom: 4em;
+  }
+  
+  #reliable {
+    height: 515px;
+    & > h2 {
+      position: relative;
+      top: 18%;
+    }
+  }
+
+  #specialist {
+    padding: 40px 15%;
+  }
+
+  #ad2 > .ad2-content {
+    margin: 0;
+    & > h2 {
+      font-size: em(48);
+    }
+    & > p {
+      padding: 0 18%;
+    }
+  }
+
+  #services {
+    padding: 40px 5%;
+  }
+
+  #contact > form {
+    margin: 0 15%;
+  }
+}
+
+@media only screen and (min-width: $large-screen) {
+  #about {
+    padding: 40px 25%;
+  }
+
+  #reliable {
+    height: 700px;
+    padding: 0;
+  }
+  #reliable > h2 {
+    top: 25%;
+    margin: 0 auto;
+    width: 340px;
+  }
+
+  #specialist {
+    padding: 60px 0;
+  }
+  .specialist-div {
+    display: inline-block;
+    width: 40%;
+    padding: 0 5%;
+    vertical-align: top;
+  }
+
+  #services {
+    padding: 60px 20% 80px;
+  }
+  #services > h3 {
+    font-size: em(40);
+  }
+}

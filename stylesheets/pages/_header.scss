@@ -1,0 +1,104 @@
+header {
+  position: relative;
+  background: url(../images/main-bg.jpg) no-repeat scroll center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size: cover;
+
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+header > hgroup {
+  position: relative;
+  top: 10%;
+  max-width: 426px;
+  padding: 10px;
+}
+
+header > hgroup > h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+header > hgroup > h2 {
+  font-size: em(16);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+header > hgroup > h3 {
+  font-size: em(14);
+  font-weight: 400;
+  font-style: italic;
+  & > a > span {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    color: #fff;
+    &:visited { color: #fff; }
+    &:hover { color: darken(#fff, 15%); }
+    &:active { color: darken(#fff, 15%); }
+  }
+}
+
+header i {
+  display: inline-block;
+  background: url(../images/arrow.png) no-repeat;
+  width: 28px;
+  height: 28px;
+  vertical-align: top;
+}
+
+header > p > a {
+  color: #fff;
+  &:hover { color: darken(#fff, 15%); }
+}
+
+header > nav {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+.main-nav > li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+
+  font-size: em(16);
+  font-weight: bold;
+}
+
+.main-nav > li > a {
+  color: #fff;
+  &:visited { color: #fff; }
+  &:hover { color: darken(#fff, 15%); }
+  &:active { color: darken(#fff, 15%); }
+}
+
+@media only screen and (min-width: $small-screen) {
+  .main-nav > li {
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: $medium-screen) {
+  header > hgroup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -213px;
+    margin-top: -100px;
+    height: 136px;
+    width: 426px;
+    
+  }
+  .main-nav > li {
+    font-size: em(18);
+  }
+}

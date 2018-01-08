@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+}
+
+body > nav {
+  @include transition (top 0.2s);
+  display: none;
+  z-index: 10000000;
+  position: fixed;
+  top: -36px;
+  left: 0;
+  right: 0;
+
+  background: rgb(0,0,0);
+  background: rgba(0,0,0, 0.9);
+}
+
+body > nav > .main-nav > li {
+  height: 50px;
+  line-height: 50px;
+  &:hover {
+    background: lighten(#000, 10%);
+  }
+}
+
+body > nav > .main-nav > li > a {
+  display: block;
+}
